@@ -1,0 +1,185 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --grey:#7A7A7A;
+    --black:#000000;
+    --white:#FFFFFF;
+    --fontopen: Open sans, serif;
+    --fontprata: Prata, serif;
+    --fontroboto:Roboto, sans-serif;
+}
+
+
+.container-max {
+    max-width: 1440px;
+    margin: auto;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--fontopen);
+}
+
+h2 {
+    font-family: var(--fontprata);
+    font-size: 52px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        align-items: center;
+        display: flex;
+
+        ul {
+            display: flex;
+            gap: 30px;
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: var(--grey);
+                }
+            }
+        }
+        
+    }
+
+    div {
+        display: flex;
+        gap:20px;
+
+        a {
+            color: var(--grey);
+        }
+    }
+    
+}
+
+/* Main */
+
+main {
+
+    #section-fashion {
+
+        margin-bottom: 120px;
+        text-align: center;
+        background-image:url("../image/be56f3d68b82e581bc867804f1b184e44e5153b8.jpg");
+        background-size: cover;
+
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.262);
+            padding: 350px 0;
+        }
+
+            h1 {
+                font-size: 52px;
+                color: var(--white);
+                font-family: var(--fontprata);
+            }
+
+            p {
+                font-family: var(--fontopen);
+                color: var(--white);
+            }
+    }
+
+    #women {
+        
+
+        #div-wo {
+            display: grid;
+            grid-template-columns: 50% auto;
+            align-items: center;
+            margin-bottom: 120px;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 15px;
+
+                a {
+                    color: var(--white);
+                    background-color: var(--black);
+                    padding: 8px;
+                    width: max-content;
+
+                }
+            }
+        }
+
+        #div-shop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1140px;
+            margin: auto;
+            gap: 30px;
+            margin-bottom: 120px;
+
+            article {
+                box-shadow: 0px 0px 10px 0px #00000033;
+                border-radius: 15px;
+
+                div {
+                    padding: 15px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-size: 20px;
+                        font-family: var(--fontprata);
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font-size: 24px;
+                        font-family: var(--fontprata);
+                        font-weight: 400;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+}
