@@ -50,6 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
 
     nav {
         align-items: center;
@@ -102,6 +103,7 @@ main {
                 font-size: 52px;
                 color: var(--white);
                 font-family: var(--fontprata);
+                font-weight: 400;
             }
 
             p {
@@ -446,9 +448,15 @@ footer {
     }
 
     main {
-        padding: 0 15px;
+        
+        #women {
 
+            #div-shop {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
         #men {
+            padding: 0 15px;
 
             #div-shop-men {
                 display: grid;
@@ -456,6 +464,7 @@ footer {
             }
         }
         #kids {
+            padding: 0 15px;
 
             #div-shop-kids {
                 display: grid;
@@ -463,6 +472,7 @@ footer {
             }
         }
         #sales {
+            padding: 0 15px;
 
             #div-shop-sales {
                 display: grid;
@@ -491,14 +501,14 @@ footer {
         #women {
 
             #div-wo {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
 
             #div-shop {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
                 padding: 0 15px;
             }
         }
@@ -514,8 +524,10 @@ footer {
             }
 
             #div-shop-men {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 0;
+                margin-bottom: 120px;
                 padding: 0 15px;
             }
         }
@@ -531,8 +543,10 @@ footer {
             }
 
             #div-shop-kids {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 0;
+                margin-bottom: 120px;
                 padding: 0 15px;
             }
         }
@@ -564,8 +578,10 @@ footer {
             }
 
             #div-shop-sales {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 0;
+                margin-bottom: 120px;
                 padding: 0 15px;
             }
         }
